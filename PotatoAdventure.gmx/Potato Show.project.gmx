@@ -4,7 +4,15 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\som_menu0</sound>
+    <sound>sound\death</sound>
+    <sound>sound\blok</sound>
+    <sound>sound\lava</sound>
+    <sound>sound\morte</sound>
+    <sound>sound\tata</sound>
+    <sound>sound\sommenu</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sp_wall</sprite>
     <sprite>sprites\sp_but</sprite>
@@ -12,19 +20,53 @@
     <sprite>sprites\sp_0</sprite>
     <sprite>sprites\sp_1</sprite>
     <sprite>sprites\sp_2</sprite>
+    <sprite>sprites\spr_L</sprite>
+    <sprite>sprites\spr_R</sprite>
+    <sprite>sprites\spr_inimigo</sprite>
+    <sprite>sprites\sprite11</sprite>
+    <sprite>sprites\sprite10</sprite>
+    <sprite>sprites\sprite9</sprite>
+    <sprite>sprites\sprite12</sprite>
+    <sprite>sprites\fire_2</sprite>
+    <sprite>sprites\Fire</sprite>
+    <sprite>sprites\sprPlay</sprite>
+    <sprite>sprites\sprOP</sprite>
+    <sprite>sprites\sprQuit</sprite>
+    <sprite>sprites\sprmenu</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg</background>
     <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\script0.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_score</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_Rick</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_keys</object>
     <object>objects\obj_gp</object>
+    <object>objects\obj_L</object>
+    <object>objects\obj_R</object>
+    <object>objects\obj_ini0</object>
+    <object>objects\obj_ini1</object>
+    <object>objects\obj_ini2</object>
+    <object>objects\obj_ini3</object>
+    <object>objects\obj_ini4</object>
+    <object>objects\obj_kill</object>
+    <object>objects\gui_score</object>
+    <object>objects\objpai</object>
+    <object>objects\colission</object>
+    <object>objects\objMenu</object>
+    <object>objects\objPlay</object>
+    <object>objects\objquit</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\menu</room>
     <room>rooms\room0</room>
   </rooms>
   <help>
