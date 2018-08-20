@@ -31,6 +31,7 @@ hsp=0;
 vsp=0;
 jumping=-20;
 image_speed=.4
+global.name = "Potato"
 </string>
           </argument>
         </arguments>
@@ -92,11 +93,20 @@ if key_left
     {
         hsp=-18
         image_xscale=1
+        if !audio_is_playing(tata){
+
+        audio_play_sound(tata,9,false)
+        }
     }
 if key_right
     {
         hsp=18
         image_xscale=-1
+        
+        if !audio_is_playing(tata){
+
+        audio_play_sound(tata,9,false)
+        }
     }
 if (key_left &amp;&amp; key_right) or (!key_left &amp;&amp; !key_right)
     {
@@ -122,27 +132,79 @@ if (vsp&lt;0)
         sprite_index = sp_2
     }
     
-if place_meeting(x,y,colission)
+if place_meeting(x,y,obj_ini0)
         {
+        audio_play_sound(death,10,false)
+        audio_play_sound(morte,10,false)
         instance_destroy()
+        ini_open("data.ini");
+        global.last = ini_read_real("data", "highscore", 0);
+        if (global.pontos &gt; global.last) {
+            ini_write_real("data", "highscore", global.pontos);
+        global.last = global.pontos;
+                            }
+        ini_close();
+        room_goto(menu);
         }
         
 if place_meeting(x,y,obj_ini1)
         {
+        audio_play_sound(death,10,false)
+        audio_play_sound(morte,10,false)
         instance_destroy()
+        ini_open("data.ini");
+        global.last = ini_read_real("data", "highscore", 0);
+        if (global.pontos &gt; global.last) {
+            ini_write_real("data", "highscore", global.pontos);
+        global.last = global.pontos;
+                            }
+        ini_close();
+        room_goto(menu);
         }
 if place_meeting(x,y,obj_ini2)
         {
+        audio_play_sound(death,10,false)
+        audio_play_sound(morte,10,false)
         instance_destroy()
+        ini_open("data.ini");
+        global.last = ini_read_real("data", "highscore", 0);
+        if (global.pontos &gt; global.last) {
+            ini_write_real("data", "highscore", global.pontos);
+        global.last = global.pontos;
+                            }
+        ini_close();
+        room_goto(menu);
         }
 if place_meeting(x,y,obj_ini3)
         {
+        audio_play_sound(death,10,false)
+        audio_play_sound(morte,10,false)
         instance_destroy()
+        ini_open("data.ini");
+        global.last = ini_read_real("data", "highscore", 0);
+        if (global.pontos &gt; global.last) {
+            ini_write_real("data", "highscore", global.pontos);
+        global.last = global.pontos;
+                            }
+        ini_close();
+        global.pontos = 0;
+        room_goto(menu);
         }
 if place_meeting(x,y,obj_ini4)
         {
+        audio_play_sound(death,10,false)
+        audio_play_sound(morte,10,false)
         instance_destroy()
-        }    
+        ini_open("data.ini");
+        global.last = ini_read_real("data", "highscore", 0);
+        if (global.pontos &gt; global.last) {
+            ini_write_real("data", "highscore", global.pontos);
+        global.last = global.pontos;
+                            }
+        ini_close();
+        global.pontos = 0;
+        room_goto(menu);
+        }   
 </string>
           </argument>
         </arguments>

@@ -27,9 +27,14 @@
             <kind>1</kind>
             <string>effect_create_below(ef_smoke, x, y+18, choose(1), c_yellow);
 effect_create_below(ef_flare, x, y, choose(0), c_yellow);
+if !audio_is_playing(lava){
+
+    audio_play_sound(lava,5,false)
+}
 if place_meeting(x,y,obj_kill)
         {
         global.pontos +=8
+        audio_stop_sound(lava)
         instance_destroy()
         }
 </string>

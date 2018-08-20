@@ -10,7 +10,8 @@
   <persistent>0</persistent>
   <colour>15432202</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>audio_play_sound(sommenu,3,true)
+audio_stop_sound(som_menu0)</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>0</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

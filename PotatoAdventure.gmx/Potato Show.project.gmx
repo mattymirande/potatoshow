@@ -4,7 +4,15 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\som_menu0</sound>
+    <sound>sound\death</sound>
+    <sound>sound\blok</sound>
+    <sound>sound\lava</sound>
+    <sound>sound\morte</sound>
+    <sound>sound\tata</sound>
+    <sound>sound\sommenu</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sp_wall</sprite>
     <sprite>sprites\sp_but</sprite>
@@ -21,12 +29,19 @@
     <sprite>sprites\sprite12</sprite>
     <sprite>sprites\fire_2</sprite>
     <sprite>sprites\Fire</sprite>
+    <sprite>sprites\sprPlay</sprite>
+    <sprite>sprites\sprOP</sprite>
+    <sprite>sprites\sprQuit</sprite>
+    <sprite>sprites\sprmenu</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg</background>
     <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\script0.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_score</font>
   </fonts>
@@ -46,8 +61,12 @@
     <object>objects\gui_score</object>
     <object>objects\objpai</object>
     <object>objects\colission</object>
+    <object>objects\objMenu</object>
+    <object>objects\objPlay</object>
+    <object>objects\objquit</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\menu</room>
     <room>rooms\room0</room>
   </rooms>
   <help>
